@@ -1,0 +1,17 @@
+[project]
+name = "renovate-reproduction-pdm-dev-deps"
+version = "0.1.0"
+description = ""
+authors = [{ name = "aleksul", email = "me@aleksul.space" }]
+dependencies = ["fastapi~=0.95.2", "uvicorn~=0.22.0"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+lint = ["ruff>=0.0.269"]
+test = ["pytest>=7.3.0", "pytest-asyncio>=0.20.3"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
